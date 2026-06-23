@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Level Shoes" },
-      { name: "description", content: "The world's largest luxury shoe store." },
+      { title: "Le Moment — Designed for Moments That Last" },
+      { name: "description", content: "Le Moment — luxury fashion, timeless craftsmanship and effortless sophistication." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
