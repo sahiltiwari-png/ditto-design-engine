@@ -268,39 +268,26 @@ function Index() {
         </div>
       </section>
 
-      {/* Trending Drops */}
-      <section className="mx-auto max-w-[1400px] px-4 pb-20 md:px-8">
-        <div className="mb-10 flex items-end justify-between">
-          <div>
-            <p className="text-[11px] font-semibold tracking-[0.3em] text-accent-red">TRENDING NOW</p>
-            <h2 className="mt-2 font-display text-3xl font-semibold md:text-5xl">Trending Drops</h2>
-          </div>
-          <a href="#" className="text-[11px] font-semibold tracking-[0.3em] underline underline-offset-4">VIEW ALL</a>
-        </div>
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-5 md:gap-6">
-          {trending.map((p) => <ProductCard key={p.name} p={p} />)}
-        </div>
-      </section>
-
-      {/* Pair editorial 2 — sandals / belt */}
+      {/* Pair editorial 2 — Le Kiosk / Break the Matrex */}
       <section className="mx-auto max-w-[1400px] px-4 pb-20 md:px-8">
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
-          <div className="group relative aspect-[4/5] overflow-hidden">
-            <img src={summerSandals} alt="Summer essentials" className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
+          <div className="group relative aspect-[4/5] overflow-hidden bg-black">
+            <img src={leKiosk.url} alt="Le Kiosk" className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
             <div className="absolute bottom-0 left-0 p-6 text-white">
-              <h3 className="font-display text-3xl font-semibold md:text-4xl">SUMMER</h3>
+              <h3 className="font-display text-3xl font-semibold md:text-4xl">LE KIOSK</h3>
+              <a href="#" className="mt-2 inline-block text-[11px] font-semibold tracking-[0.3em] underline underline-offset-4">Visit The Store</a>
+            </div>
+          </div>
+          <div className="group relative aspect-[4/5] overflow-hidden bg-black">
+            <img src={matrex.url} alt="Break the Matrex" className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
+            <div className="absolute bottom-0 left-0 p-6 text-white">
+              <h3 className="font-display text-3xl font-semibold md:text-4xl">BREAK THE MATREX</h3>
               <a href="#" className="mt-2 inline-block text-[11px] font-semibold tracking-[0.3em] underline underline-offset-4">Shop The Edit</a>
             </div>
           </div>
-          <div className="group relative aspect-[4/5] overflow-hidden">
-            <img src={mens2.url} alt="Accessories" className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
-            <div className="absolute bottom-0 left-0 p-6 text-white">
-              <h3 className="font-display text-3xl font-semibold md:text-4xl">ACCESSORIES</h3>
-              <a href="#" className="mt-2 inline-block text-[11px] font-semibold tracking-[0.3em] underline underline-offset-4">Shop Now</a>
-            </div>
-          </div>
         </div>
       </section>
+
 
       {/* Newsletter */}
       <section className="bg-muted">
