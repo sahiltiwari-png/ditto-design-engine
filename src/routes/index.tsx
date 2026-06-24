@@ -206,9 +206,9 @@ function Index() {
             { img: crimson.url, title: "WOMEN", sub: "Break the Crimson", cta: "Shop Women" },
             { img: redCoats.url, title: "TAILORING", sub: "Modern Masculinity", cta: "Explore Collection" },
           ].map((c) => (
-            <div key={c.title} className="group relative aspect-[4/5] overflow-hidden bg-muted">
-              <img src={c.img} alt={c.title} className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div key={c.title} className="group relative overflow-hidden rounded-sm bg-black">
+              <img src={c.img} alt={c.title} className="h-auto w-full object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8 text-white">
                 <p className="text-[11px] font-semibold tracking-[0.3em] text-white/80">{c.sub}</p>
                 <h3 className="mt-2 font-display text-4xl font-semibold md:text-5xl">{c.title}</h3>
