@@ -271,15 +271,17 @@ function Index() {
       {/* Pair editorial 2 — Le Kiosk / Break the Matrex */}
       <section className="mx-auto max-w-[1400px] px-4 pb-20 md:px-8">
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
-          <div className="group relative aspect-[4/5] overflow-hidden bg-black">
-            <img src={leKiosk.url} alt="Le Kiosk" className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
+          <div className="group relative overflow-hidden rounded-sm bg-black">
+            <img src={leKiosk.url} alt="Le Kiosk" className="h-auto w-full object-contain transition-transform duration-[1500ms] group-hover:scale-[1.02]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 text-white">
               <h3 className="font-display text-3xl font-semibold md:text-4xl">LE KIOSK</h3>
               <a href="#" className="mt-2 inline-block text-[11px] font-semibold tracking-[0.3em] underline underline-offset-4">Visit The Store</a>
             </div>
           </div>
-          <div className="group relative aspect-[4/5] overflow-hidden bg-black">
-            <img src={matrex.url} alt="Break the Matrex" className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
+          <div className="group relative overflow-hidden rounded-sm bg-black">
+            <img src={matrex.url} alt="Break the Matrex" className="h-auto w-full object-contain transition-transform duration-[1500ms] group-hover:scale-[1.02]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 text-white">
               <h3 className="font-display text-3xl font-semibold md:text-4xl">BREAK THE MATREX</h3>
               <a href="#" className="mt-2 inline-block text-[11px] font-semibold tracking-[0.3em] underline underline-offset-4">Shop The Edit</a>
