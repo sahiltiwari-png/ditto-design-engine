@@ -8,7 +8,7 @@ import moment1 from "@/assets/moment1.jpg.asset.json";
 import moment2 from "@/assets/moment2.jpg.asset.json";
 import elegance1 from "@/assets/elegance1.png.asset.json";
 import momentNoir from "@/assets/moment-noir.png.asset.json";
-import logo from "@/assets/logo.jpeg.asset.json";
+import logo from "@/assets/logo.png.asset.json";
 import louboutin from "@/assets/louboutin.jpg";
 import summerSandals from "@/assets/summer-sandals.jpg";
 import newBalance from "@/assets/new-balance.jpg";
