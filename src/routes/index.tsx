@@ -203,8 +203,8 @@ function Index() {
       <section className="mx-auto max-w-[1400px] px-4 pb-20 md:px-8">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {[
-            { img: collection1.url, title: "WOMEN", sub: "The Atelier Edit", cta: "Shop Women" },
-            { img: elegance1.url, title: "TAILORING", sub: "Modern Femininity", cta: "Explore Collection" },
+            { img: crimson.url, title: "WOMEN", sub: "Break the Crimson", cta: "Shop Women" },
+            { img: redCoats.url, title: "TAILORING", sub: "Modern Masculinity", cta: "Explore Collection" },
           ].map((c) => (
             <div key={c.title} className="group relative aspect-[4/5] overflow-hidden bg-muted">
               <img src={c.img} alt={c.title} className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110" />
