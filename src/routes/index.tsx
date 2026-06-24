@@ -87,11 +87,11 @@ function Index() {
       {/* Header */}
       <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1400px] items-center gap-6 px-4 py-4 md:px-8">
-          <a href="/" className="flex shrink-0 items-center gap-2 transition-transform hover:scale-105">
-            <img src={logo.url} alt="Le Moment" className="h-10 w-10 object-contain" />
+          <a href="/" className="flex shrink-0 items-center gap-3 transition-transform hover:scale-105">
+            <img src={logo.url} alt="Le Moment" className="h-20 w-20 object-contain md:h-24 md:w-24" />
             <div className="flex flex-col leading-none">
-              <span className="font-display text-2xl font-semibold tracking-tight">Le Moment</span>
-              <span className="text-[9px] tracking-[0.3em] text-muted-foreground">MAISON DE LUXE</span>
+              <span className="font-display text-3xl font-semibold tracking-tight md:text-4xl">Le Moment</span>
+              <span className="text-[10px] tracking-[0.3em] text-muted-foreground md:text-xs">MAISON DE LUXE</span>
             </div>
           </a>
           <nav className="ml-6 hidden flex-1 items-center gap-7 text-[11px] font-semibold tracking-[0.15em] lg:flex">
