@@ -9,6 +9,11 @@ import moment2 from "@/assets/moment2.jpg.asset.json";
 import elegance1 from "@/assets/elegance1.png.asset.json";
 import momentNoir from "@/assets/moment-noir.png.asset.json";
 import logo from "@/assets/logo.png.asset.json";
+import redCoats from "@/assets/red-coats.png.asset.json";
+import crimson from "@/assets/crimson.png.asset.json";
+import leKiosk from "@/assets/le-kiosk.png.asset.json";
+import matrex from "@/assets/matrex.png.asset.json";
+import styleNoir from "@/assets/style-noir.png.asset.json";
 import louboutin from "@/assets/louboutin.jpg";
 import summerSandals from "@/assets/summer-sandals.jpg";
 import newBalance from "@/assets/new-balance.jpg";
@@ -198,12 +203,12 @@ function Index() {
       <section className="mx-auto max-w-[1400px] px-4 pb-20 md:px-8">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {[
-            { img: collection1.url, title: "WOMEN", sub: "The Atelier Edit", cta: "Shop Women" },
-            { img: elegance1.url, title: "TAILORING", sub: "Modern Femininity", cta: "Explore Collection" },
+            { img: crimson.url, title: "WOMEN", sub: "Break the Crimson", cta: "Shop Women" },
+            { img: redCoats.url, title: "TAILORING", sub: "Modern Masculinity", cta: "Explore Collection" },
           ].map((c) => (
-            <div key={c.title} className="group relative aspect-[4/5] overflow-hidden bg-muted">
-              <img src={c.img} alt={c.title} className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div key={c.title} className="group relative overflow-hidden rounded-sm bg-black">
+              <img src={c.img} alt={c.title} className="h-auto w-full object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8 text-white">
                 <p className="text-[11px] font-semibold tracking-[0.3em] text-white/80">{c.sub}</p>
                 <h3 className="mt-2 font-display text-4xl font-semibold md:text-5xl">{c.title}</h3>
@@ -263,39 +268,28 @@ function Index() {
         </div>
       </section>
 
-      {/* Trending Drops */}
-      <section className="mx-auto max-w-[1400px] px-4 pb-20 md:px-8">
-        <div className="mb-10 flex items-end justify-between">
-          <div>
-            <p className="text-[11px] font-semibold tracking-[0.3em] text-accent-red">TRENDING NOW</p>
-            <h2 className="mt-2 font-display text-3xl font-semibold md:text-5xl">Trending Drops</h2>
-          </div>
-          <a href="#" className="text-[11px] font-semibold tracking-[0.3em] underline underline-offset-4">VIEW ALL</a>
-        </div>
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-5 md:gap-6">
-          {trending.map((p) => <ProductCard key={p.name} p={p} />)}
-        </div>
-      </section>
-
-      {/* Pair editorial 2 — sandals / belt */}
+      {/* Pair editorial 2 — Le Kiosk / Break the Matrex */}
       <section className="mx-auto max-w-[1400px] px-4 pb-20 md:px-8">
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
-          <div className="group relative aspect-[4/5] overflow-hidden">
-            <img src={summerSandals} alt="Summer essentials" className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
+          <div className="group relative overflow-hidden rounded-sm bg-black">
+            <img src={leKiosk.url} alt="Le Kiosk" className="h-auto w-full object-contain transition-transform duration-[1500ms] group-hover:scale-[1.02]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 text-white">
-              <h3 className="font-display text-3xl font-semibold md:text-4xl">SUMMER</h3>
+              <h3 className="font-display text-3xl font-semibold md:text-4xl">LE KIOSK</h3>
+              <a href="#" className="mt-2 inline-block text-[11px] font-semibold tracking-[0.3em] underline underline-offset-4">Visit The Store</a>
+            </div>
+          </div>
+          <div className="group relative overflow-hidden rounded-sm bg-black">
+            <img src={matrex.url} alt="Break the Matrex" className="h-auto w-full object-contain transition-transform duration-[1500ms] group-hover:scale-[1.02]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+            <div className="absolute bottom-0 left-0 p-6 text-white">
+              <h3 className="font-display text-3xl font-semibold md:text-4xl">BREAK THE MATREX</h3>
               <a href="#" className="mt-2 inline-block text-[11px] font-semibold tracking-[0.3em] underline underline-offset-4">Shop The Edit</a>
             </div>
           </div>
-          <div className="group relative aspect-[4/5] overflow-hidden">
-            <img src={mens2.url} alt="Accessories" className="h-full w-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
-            <div className="absolute bottom-0 left-0 p-6 text-white">
-              <h3 className="font-display text-3xl font-semibold md:text-4xl">ACCESSORIES</h3>
-              <a href="#" className="mt-2 inline-block text-[11px] font-semibold tracking-[0.3em] underline underline-offset-4">Shop Now</a>
-            </div>
-          </div>
         </div>
       </section>
+
 
       {/* Newsletter */}
       <section className="bg-muted">
